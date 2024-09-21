@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+        <form id="form" onsubmit="evitar_reinicio(event)">
+            <h1>Operaciones con dos números</h1>
+            <label for="inputNum">Número 1:
+              <input type="number" id="inputNum" />
+            </label>
+            <br />
+            <label for="inputNum2">Número 2:
+              <input type="number" id="inputNum2" />
+            </label>
+            <br/>
+            <button type="button" onclick="suma()">Sumar</button>
+            <button type="button" onclick="resta()">Restar</button>
+            <button type="button" onclick="mult()">Multiplicar</button>
+            <button type="button" onclick="dividir()">Dividir</button>
+            <button type="reset" onclick="borrar()">Borrar</button>
+            <p class="" id="resultado"></p>
+          </form>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
